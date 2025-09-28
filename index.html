@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Værksted Værktøjsliste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .category-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+        .tool-card {
+            background-color: #f9fafb;
+            border-radius: 0.75rem;
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .tool-image {
+            width: 128px;
+            height: 128px;
+            border-radius: 0.5rem;
+            object-fit: contain;
+            background-color: #fff;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="container py-8">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Scooter Værksted Værktøjsliste</h1>
+    </div>
+
+    <!-- Kategori: I. Grundlæggende Mekanisk Håndværktøj -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">I. Grundlæggende Mekanisk Håndværktøj</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/topnoeglesaet.jpg" alt="Professionelt Topnøglesæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Topnøglesæt</h3>
+                <p class="text-sm text-gray-600">Formål: Løsning og spænding af bolte. Skal indeholde 1/4", 3/8" og 1/2" i professionel kvalitet.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/gaffel_ringnoeglesaet.jpg" alt="Gaffelnøglesæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Gaffel- og Ringnøglesæt</h3>
+                <p class="text-sm text-gray-600">Formål: Til at holde fast i møtrikker. Ringnøglen bruges til at løsne/spænde (højt moment), gaffelnøglen bruges til hastighed.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/momentnoegle.jpg" alt="Momentnøgle" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Momentnøgle</h3>
+                <p class="text-sm text-gray-600">Formål: Kritisk for sikkerhed. Sikrer at bolte (motor, bremser) spændes nøjagtigt til fabrikantens Nm-specifikation.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/unbrakonoeglesaet.jpg" alt="Unbrakonøglesæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Unbrakonøglesæt (Hex)</h3>
+                <p class="text-sm text-gray-600">Formål: Montering/demontering af bolte med indvendigt sekskantgreb. T-håndtag anbefales for hastighed.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/torxnoeglesaet.jpg" alt="Torxnøglesæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Torxnøglesæt</h3>
+                <p class="text-sm text-gray-600">Formål: Til Torx-bolte, ofte fundet på europæiske scootermærker og til at holde på kåber/paneler.</p>
+            </div>
+            <!-- OPDELEDE SKRUETRÆKKERE -->
+            <div class="tool-card">
+                <img src="billeder/skruetraekker_fladhoved.jpg" alt="Fladhoved Skruetrækkersæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Skruetrækkere (Fladhoved)</h3>
+                <p class="text-sm text-gray-600">Formål: Montering og demontering af skruer med lige kærv.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/skruetraekker_phillips.jpg" alt="Skruetrækkersæt Phillips/Stjerne" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Skruetrækkere (Phillips/Stjerne)</h3>
+                <p class="text-sm text-gray-600">Formål: Til krydsskruer (den almindelige stjerneform). OBS: Må ikke forveksles med JIS.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/skruetraekker_jis.jpg" alt="Skruetrækkersæt JIS" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Skruetrækkere (JIS-standard)</h3>
+                <p class="text-sm text-gray-600">Formål: Essentiel for japanske modeller. Ligner Phillips, men har en anden vinkel, hvilket forhindrer, at skruen rundes.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/kombinationstang.jpg" alt="Kombinationstang" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Kombinationstang</h3>
+                <p class="text-sm text-gray-600">Formål: Universalværktøj til gribning og bukning af wirer. Ikke til præcist klip eller højt moment.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/spidstang.jpg" alt="Spidstang/Langnæsetang" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Spidstang (Langnæsetang)</h3>
+                <p class="text-sm text-gray-600">Formål: Præcisionsgribning og arbejde med smådele og fjedre i dybe eller trange områder.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/bidetang.jpg" alt="Bidetang/Skævbider" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Bidetang (Skævbider)</h3>
+                <p class="text-sm text-gray-600">Formål: Rent og præcist klip af wirer, kabelstrips og bløde ledninger. Bruges aldrig til at gribe.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/laaserings_indvendig_lige.jpg" alt="Låseringstang Indvendig Lige" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Låseringstang (Indv., Lige)</h3>
+                <p class="text-sm text-gray-600">Formål: Til ringe i huller (f.eks. gearkasselejer). Spidserne åbner ved tryk. Kræver direkte adgang.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/laaserings_indvendig_vinklet.jpg" alt="Låseringstang Indvendig Vinklet" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Låseringstang (Indv., Vinklet 90°)</h3>
+                <p class="text-sm text-gray-600">Formål: Til ringe i huller, der sidder dybt eller bag en kant. Vinklen giver adgang.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/laaserings_udvendig_lige.jpg" alt="Låseringstang Udvendig Lige" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Låseringstang (Udvendig, Lige)</h3>
+                <p class="text-sm text-gray-600">Formål: Til ringe på aksler (f.eks. variator). Spidserne lukker ved tryk. Kræver direkte adgang.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/laaserings_udvendig_vinklet.jpg" alt="Låseringstang Udvendig Vinklet" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Låseringstang (Udvendig, Vinklet 90°)</h3>
+                <p class="text-sm text-gray-600">Formål: Til ringe på aksler, der sidder tæt på et hus eller i en vinkel.</p>
+            </div>
+            <!-- OPDELEDE HAMMERE -->
+            <div class="tool-card">
+                <img src="billeder/gummihammer.jpg" alt="Gummihammer" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Gummihammer</h3>
+                <p class="text-sm text-gray-600">Formål: Skånsom montering af dele, der kræver fleksibilitet i slaget (f.eks. dæk eller kåber).</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/plastikhammer.jpg" alt="Plastikhammer/Død-vægt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Plastikhammer (Død-vægt)</h3>
+                <p class="text-sm text-gray-600">Formål: Slagværktøj med lav rekyl til præcis montering af lejer uden skader.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/maskinhammer.jpg" alt="Maskinhammer" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Maskinhammer (Stål)</h3>
+                <p class="text-sm text-gray-600">Formål: Overfører kraft, primært til at slå på dorne. Må aldrig ramme direkte på scooterdele.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/dornesaet.jpg" alt="Dornesæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Dornesæt (Forskellige typer)</h3>
+                <p class="text-sm text-gray-600">Formål: Bruges som præcist mellemled til at drive lejer, bøsninger eller splittere ind/ud.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kategori: II. Specialværktøj til Motor og Drivlinje -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">II. Specialværktøj til Motor og Drivlinje</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/variatorlaasevaerktoej.jpg" alt="Variatorlåseværktøj" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Variatorlåseværktøj</h3>
+                <p class="text-sm text-gray-600">Formål: Kritisk modhold for at løsne/spænde variatormøtrikken uden at beskadige krumtappen.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/koblingslaasevaerktoej.jpg" alt="Koblingslåseværktøj" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Koblingslåseværktøj</h3>
+                <p class="text-sm text-gray-600">Formål: Kritisk modhold for at løsne/spænde møtrikken til koblingsklokken og koblingsnavet.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/svinghjulsaftraekkersaet.jpg" alt="Svinghjulsaftrækker" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Svinghjulsaftrækkersæt</h3>
+                <p class="text-sm text-gray-600">Formål: Afmontering af svinghjulet fra krumtappen. Sættet skal have flere gevindstørrelser.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/krumtap_montagevaerktoej.jpg" alt="Krumtap-montageværktøj" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Krumtap-montageværktøj</h3>
+                <p class="text-sm text-gray-600">Formål: Til skånsomt at trække krumtappen ind i motorblokken. Slag er forbudt.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/lejeaftraekkersaet.jpg" alt="Lejeaftrækkersæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Lejeaftrækkersæt</h3>
+                <p class="text-sm text-gray-600">Formål: Til at fjerne motorlejer (både indvendige og udvendige) uden at beskadige motorhusene.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/cylinderhoner.jpg" alt="Cylinderhoner" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Cylinderhoner</h3>
+                <p class="text-sm text-gray-600">Formål: Til at genoprette et korrekt krydsslibningsmønster i cylindervæggen ved skift af stempelringe.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/ventilfjederkompressor.jpg" alt="Ventilfjederkompressor" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Ventilfjederkompressor</h3>
+                <p class="text-sm text-gray-600">Formål: Til at komprimere ventilfjedre for at fjerne/montere ventilsikringer (kun 4-takter).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kategori: III. Diagnose og Elektrisk Specialudstyr -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">III. Diagnose og Elektrisk Specialudstyr</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/digitalt_multimeter.jpg" alt="Digitalt Multimeter" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Digitalt Multimeter (DMM)</h3>
+                <p class="text-sm text-gray-600">Formål: Måling af V (spænding), A (strøm) og Ω (modstand) for at diagnosticere elektriske fejl.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/obd_scanner.jpg" alt="OBD-II/Diagnose-scanner" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">OBD-II/Diagnose-scanner</h3>
+                <p class="text-sm text-gray-600">Formål: Kommunikation med ECU (motorstyring) for at læse fejlkoder og nulstille serviceintervaller.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/stroemtang.jpg" alt="Strømtang" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Strømtang (DC Clamp Meter)</h3>
+                <p class="text-sm text-gray-600">Formål: Måling af strømforbrug (Ampere) i DC-kredsløb uden at afbryde ledningen.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/taendingsmicrometer.jpg" alt="Tændingsmicrometer" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Tændingsmicrometer</h3>
+                <p class="text-sm text-gray-600">Formål: Ekstremt præcis indstilling af tændingstidspunktet i forhold til top dead center (TDC).</p>
+            </div>
+            <!-- OPDELEDE CRIMP OG TERMINALER -->
+            <div class="tool-card">
+                <img src="billeder/crimptang.jpg" alt="Crimptang" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Crimptang (Professionel)</h3>
+                <p class="text-sm text-gray-600">Formål: Til at montere elektriske stik og terminaler professionelt og sikre en lav modstand.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/terminalsaet.jpg" alt="Terminal Sæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Terminal- og Ledningssæt</h3>
+                <p class="text-sm text-gray-600">Formål: Forbrugsvarer: Sortiment af stik, kabelsko og krympeflex til ledningsreparation.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/batteritester.jpg" alt="Batteritester" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Batteritester</h3>
+                <p class="text-sm text-gray-600">Formål: Til at diagnosticere batteriets faktiske helbredstilstand (CCA) og levetid.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kategori: IV. Dæk og Hjul -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">IV. Dæk og Hjul</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/daekapparat.jpg" alt="Dækapparat" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Dækapparat (Maskine)</h3>
+                <p class="text-sm text-gray-600">Formål: Til hurtig, sikker og skånsom afmontering og montering af scooter- og motorcykeldæk.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/afbalanceringsapparat.jpg" alt="Afbalanceringsapparat" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Afbalanceringsapparat</h3>
+                <p class="text-sm text-gray-600">Formål: Sikrer præcis afbalancering af hjul efter dækskift for at undgå vibrationer ved høj hastighed.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/daekjern_saet.jpg" alt="Dækjern Sæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Dækjern (Sæt)</h3>
+                <p class="text-sm text-gray-600">Formål: Manuelt hjælpemiddel til at løsne de sidste sektioner af dækket fra fælgen.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/ventilnaalvaerktoej.jpg" alt="Ventilnålværktøj" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Ventilnålværktøj</h3>
+                <p class="text-sm text-gray-600">Formål: Til at fjerne og montere ventilnålen i dækkets ventil hurtigt og sikkert.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Kategori: V. Bremse Service -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">V. Bremse Service</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/bremseudlufter.jpg" alt="Bremseudlufter" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Bremseudlufter (Vakuum)</h3>
+                <p class="text-sm text-gray-600">Formål: Kritisk for sikkerhed. Til at trække bremsevæsken igennem og sikre, at der ingen luftbobler er.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/bremsekaliber_kompressor.jpg" alt="Bremsekaliber kompressor" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Bremsekaliber-kompressor/spreder</h3>
+                <p class="text-sm text-gray-600">Formål: Til at presse bremsekaliberens stempler sikkert og jævnt tilbage ved skift af klodser.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kategori: VI. Karrosseri & Lakering -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">VI. Karrosseri & Lakering</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/slibemaskine_lak.jpg" alt="Slibemaskine til lak" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Slibemaskine (Lak)</h3>
+                <p class="text-sm text-gray-600">Formål: Eksentersliber til at forberede plastkåber til lakering og fjerne ridser.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/polermaskine.jpg" alt="Polermaskine" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Polermaskine</h3>
+                <p class="text-sm text-gray-600">Formål: Roterende/Dual-action maskine til at genoprette lakkens glans og fjerne defekter.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/lakeringspistol.jpg" alt="Lakeringspistol" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Lakeringspistol</h3>
+                <p class="text-sm text-gray-600">Formål: HVLP (High Volume Low Pressure) pistol til præcis påføring af basis- og klarlak.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/plastiksvejser.jpg" alt="Plastiksvejser" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Plastiksvejser</h3>
+                <p class="text-sm text-gray-600">Formål: Til at smelte og svejse revner i plastkåber (f.eks. ABS eller PP) for at sikre strukturel holdbarhed.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kategori: VII. Værkstedsudstyr & Infrastruktur -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">VII. Værkstedsudstyr & Infrastruktur</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/hydraulisk_loeftabord.jpg" alt="Løftebord" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Hydraulisk Løftebord</h3>
+                <p class="text-sm text-gray-600">Formål: Hæver scooteren til en ergonomisk arbejdshøjde. Skal have sikkerhedslås og min. 400 kg kapacitet.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/kompressor.jpg" alt="Kompressor" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Kompressor</h3>
+                <p class="text-sm text-gray-600">Formål: Leverer konstant trykluft til dækapparat, luftværktøj og lakeringspistol.</p>
+            </div>
+            <!-- OPDELEDE LØFTERE -->
+            <div class="tool-card">
+                <img src="billeder/motorlift_hydraulisk.jpg" alt="Hydraulisk Motorlift" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Motorlift (Hydraulisk)</h3>
+                <p class="text-sm text-gray-600">Formål: Understøtter og manøvrerer motoren præcist under montering og afmontering.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/motorhejs_kran.jpg" alt="Motorhejs Kran" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Motorhejs/Kran</h3>
+                <p class="text-sm text-gray-600">Formål: Til sikkert at løfte meget tunge motorer/transmissioner helt ud af rammen.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/ultralydsrenser.jpg" alt="Ultralydsrenser" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Ultralydsrenser</h3>
+                <p class="text-sm text-gray-600">Formål: Grundig og skånsom rengøring af karburatorer og små præcisionsdele (med varme).</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/delvasker.jpg" alt="Delvasker" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Delvasker</h3>
+                <p class="text-sm text-gray-600">Formål: Stort kar til rengøring af store, olieforurenede motordele (f.eks. motorblokke).</p>
+            </div>
+            <!-- OPDELEDE BOREMASKINER -->
+            <div class="tool-card">
+                <img src="billeder/haandholdt_boremaskine.jpg" alt="Håndholdt Boremaskine" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Håndholdt Boremaskine</h3>
+                <p class="text-sm text-gray-600">Formål: Til almindelig montering, vedligeholdelse og boring i værkstedet.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/soejleboremaskine.jpg" alt="Søjleboremaskine" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Søjleboremaskine</h3>
+                <p class="text-sm text-gray-600">Formål: Til at bore præcise, vinkelrette huller i metaldele, kritisk ved gevindreparation.</p>
+            </div>
+            <!-- OPDELEDE SVEJSEVÆRKER -->
+            <div class="tool-card">
+                <img src="billeder/mig_svejser.jpg" alt="MIG Svejser" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Svejseværk (MIG/MAG)</h3>
+                <p class="text-sm text-gray-600">Formål: Hurtig svejsning af stål (rammer, udstødning). God til tykkere materialer.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/tig_svejser.jpg" alt="TIG Svejser" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Svejseværk (TIG)</h3>
+                <p class="text-sm text-gray-600">Formål: Præcisionssvejsning af aluminium og rustfrit stål. Kræver høj renhed.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/vvs_vaerktoej.jpg" alt="VVS-Værktøj" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">VVS-Værktøj</h3>
+                <p class="text-sm text-gray-600">Formål: Rørtang, rørskærer m.m. til vedligeholdelse af værkstedets egne installationer (vand/luft).</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/sikkerhedsudstyr.jpg" alt="Sikkerhedsudstyr" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Sikkerhed</h3>
+                <p class="text-sm text-gray-600">Formål: Førstehjælpskit, øjenskyl og brandslukkere (Klasse B/C) for at opfylde lovkrav og sikkerhed.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Kategori: VIII. Præcisionsmåling & Kemikalier -->
+    <div class="category-card mb-8">
+        <div class="bg-blue-600 text-white p-4 rounded-t-lg">
+            <h2 class="text-2xl font-bold">VIII. Præcisionsmåling & Kemikalier</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="billeder/digital_skydelaere.jpg" alt="Digital Skydelære" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Digital Skydelære</h3>
+                <p class="text-sm text-gray-600">Formål: Måler slidgrænser på remme, bremseklodser og aksler. Præcision typisk 0,01 mm.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/mikrometer.jpg" alt="Mikrometer" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Mikrometer</h3>
+                <p class="text-sm text-gray-600">Formål: Ekstremt præcis måling (i tusindedele af mm) af f.eks. krumtapstappe. Skal kalibreres jævnligt.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/soegerblads_saet.jpg" alt="Søgerbladsæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Søgerbladsæt (Feeler Gauges)</h3>
+                <p class="text-sm text-gray-600">Formål: Måling af meget små spillerum, især ventilspillerum på 4-takts motorer.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/dysemaaler.jpg" alt="Dysemåler" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Dysemåler</h3>
+                <p class="text-sm text-gray-600">Formål: Nålesæt til præcis verifikation af karburatordysers diameter ved tuning eller fejlfinding.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/gevindreparationssaet.jpg" alt="Gevindreparationssæt" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Gevindreparationssæt (Helicoil)</h3>
+                <p class="text-sm text-gray-600">Formål: Reparation af ødelagte gevind i aluminiumsblokke/huse ved at indsætte en ny stålspiral.</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/sikring_kemikalier.jpg" alt="Kemikalier" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Sikring og Kemikalier (Loctite)</h3>
+                <p class="text-sm text-gray-600">Formål: Sikring af bolte (f.eks. Loctite 243) mod vibrationer og fastlåsning af lejer (Loctite 648).</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
