@@ -52,6 +52,12 @@
             background-color: #fff;
             padding: 0.5rem;
         }
+        .english-name {
+            font-size: 0.75rem;
+            color: #ef4444; /* Tailwind red-500 */
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -64,7 +70,7 @@
     <!-- Kategori: I. Håndværktøj -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">I. Håndværktøj</h2>
+            <h2 class="text-2xl font-bold">Håndværktøj (Hand Tools)</h2>
         </div>
         <div class="tool-grid">
             
@@ -73,134 +79,174 @@
                 <img src="billeder/topnoegler_fatninger.jpg" alt="Topnøgler Fatninger" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Topnøgler/Fatninger (1/4", 3/8", 1/2")</h3>
                 <p class="text-sm text-gray-600">Formål: Selve grebet, der omslutter bolten. Nødvendig i både korte, lange og E-Torx versioner.</p>
+                <p class="english-name">Sockets</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/skraldenoegle.jpg" alt="Skraldenøgle" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Skraldenøgle (1/4", 3/8", 1/2")</h3>
                 <p class="text-sm text-gray-600">Formål: Bruges til hurtig løsning og spænding efter det første moment. Kræver forskellige størrelser (drev).</p>
+                <p class="english-name">Ratchet Wrench</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/t_haandtag_lednoegle.jpg" alt="T-Håndtag/Lednøgle" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">T-Håndtag/Lednøgle</h3>
                 <p class="text-sm text-gray-600">Formål: Til at dreje toppe med jævnt moment og stor kontrol (frem for skraldens hastighed).</p>
+                <p class="english-name">Breaker Bar</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/top_forlaengere.jpg" alt="Forlængere & Kardanled" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Forlængere & Kardanled</h3>
                 <p class="text-sm text-gray-600">Formål: Forlænger rækkevidden til dybe bolte (motorbolte) og giver vinklet adgang (Kardanled).</p>
+                <p class="english-name">Extensions & Universal Joint</p>
             </div>
-            <!-- RESTEN AF HÅNDVÆRKTØJ -->
+            
+            <!-- OPDELEDE GAFEELNØGLE GRUPPEN -->
             <div class="tool-card">
                 <img src="billeder/gaffel_ringnoeglesaet.jpg" alt="Gaffelnøglesæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Gaffel- og Ringnøglesæt</h3>
-                <p class="text-sm text-gray-600">Formål: Til at holde fast i møtrikker. Ringnøglen bruges til at løsne/spænde, gaffelnøglen bruges til hastighed.</p>
+                <p class="text-sm text-gray-600">Formål: Standard nøgle. Ringnøglen bruges til at løsne/spænde, gaffelnøglen bruges til hastighed.</p>
+                <p class="english-name">Combination Wrench Set</p>
             </div>
+            <div class="tool-card">
+                <img src="billeder/lednoegle.jpg" alt="Lednøgle" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Lednøgle (Metrisk)</h3>
+                <p class="text-sm text-gray-600">Formål: Bruges til at arbejde på bolte i snævre vinkler og til at overføre jævnt, højt moment (f.eks. udstødningsbolte).</p>
+                <p class="english-name">Swivel Head Socket Wrench</p>
+            </div>
+            <div class="tool-card">
+                <img src="billeder/kloernøgle.jpg" alt="Klørnøgle" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Klørnøgle/Røgaffelnøgle</h3>
+                <p class="text-sm text-gray-600">Formål: Specialnøgle til bremsefittings og hydraulikslanger. Omslutter møtrikken 5/6 veje for at undgå at runde den.</p>
+                <p class="english-name">Flare Nut Wrench</p>
+            </div>
+            
             <div class="tool-card">
                 <img src="billeder/momentnoegle.jpg" alt="Momentnøgle" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Momentnøgle (5-60 Nm)</h3>
                 <p class="text-sm text-gray-600">Formål: Sikrer at bolte (motor, bremser) spændes nøjagtigt til fabrikantens Nm-specifikation. Dette er det lave momentværktøj.</p>
+                <p class="english-name">Torque Wrench (Low Range)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/momentnoegle_hoejt.jpg" alt="Højt Momentnøgle" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Momentnøgle (Højt: 40-200+ Nm)</h3>
                 <p class="text-sm text-gray-600">Formål: Til højere moment på f.eks. hjulaksler, svinghjul og større motorbolte.</p>
+                <p class="english-name">Torque Wrench (High Range)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/unbrakonoeglesaet.jpg" alt="Unbrakonøgler (L-sæt)" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Unbrakonøglesæt (L-nøgler)</h3>
                 <p class="text-sm text-gray-600">Formål: Standard sæt til indvendigt sekskantgreb. Bruges, hvor pladsen er trang.</p>
+                <p class="english-name">Hex Key Set (L-Wrench)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/unbrako_th.jpg" alt="Unbrako T-håndtag" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Unbrakonøgler (T-håndtag)</h3>
                 <p class="text-sm text-gray-600">Formål: Til hurtig montering og demontering og giver bedre kontrol og ergonomi.</p>
+                <p class="english-name">T-Handle Hex Keys</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/torxnoeglesaet.jpg" alt="Torxnøgler (L-sæt)" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Torxnøglesæt (L-nøgler)</h3>
                 <p class="text-sm text-gray-600">Formål: Standard sæt til Torx-bolte, ofte med hul i midten for sikkerheds-Torx.</p>
+                <p class="english-name">Torx Key Set (L-Wrench)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/torx_th.jpg" alt="Torx T-håndtag" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Torxnøgler (T-håndtag)</h3>
                 <p class="text-sm text-gray-600">Formål: Til hurtig betjening af Torx-bolte, primært på kåber og let tilgængelige steder.</p>
+                <p class="english-name">T-Handle Torx Keys</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/skruetraekker_fladhoved.jpg" alt="Fladhoved Skruetrækkersæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Skruetrækkere (Fladhoved)</h3>
                 <p class="text-sm text-gray-600">Formål: Montering og demontering af skruer med lige kærv.</p>
+                <p class="english-name">Flathead Screwdrivers</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/skruetraekker_phillips.jpg" alt="Skruetrækkersæt Phillips/Stjerne" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Skruetrækkere (Phillips/Stjerne)</h3>
                 <p class="text-sm text-gray-600">Formål: Til krydsskruer (den almindelige stjerneform). OBS: Må ikke forveksles med JIS.</p>
+                <p class="english-name">Phillips Screwdrivers</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/skruetraekker_jis.jpg" alt="Skruetrækkersæt JIS" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Skruetrækkere (JIS-standard)</h3>
                 <p class="text-sm text-gray-600">Formål: Essentiel for japanske modeller. Ligner Phillips, men har en anden vinkel, hvilket forhindrer, at skruen rundes.</p>
+                <p class="english-name">JIS Screwdrivers</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/kombinationstang.jpg" alt="Kombinationstang" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Kombinationstang</h3>
                 <p class="text-sm text-gray-600">Formål: Universalværktøj til gribning og bukning af wirer. Ikke til præcist klip eller højt moment.</p>
+                <p class="english-name">Combination Pliers</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/spidstang.jpg" alt="Spidstang/Langnæsetang" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Spidstang (Langnæsetang)</h3>
                 <p class="text-sm text-gray-600">Formål: Præcisionsgribning og arbejde med smådele og fjedre i dybe eller trange områder.</p>
+                <p class="english-name">Needle-Nose Pliers</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/bidetang.jpg" alt="Bidetang/Skævbider" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Bidetang (Skævbider)</h3>
                 <p class="text-sm text-gray-600">Formål: Rent og præcist klip af wirer, kabelstrips og bløde ledninger. Bruges aldrig til at gribe.</p>
+                <p class="english-name">Diagonal Cutters</p>
             </div>
             <!-- OPDELEDE LÅSERINGSTÆNGER -->
             <div class="tool-card">
                 <img src="billeder/laaserings_indvendig_lige.jpg" alt="Låseringstang Indvendig Lige" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Låseringstang (Indv., Lige)</h3>
                 <p class="text-sm text-gray-600">Formål: Til ringe i huller (f.eks. gearkasselejer). Spidserne åbner ved tryk. Kræver direkte adgang.</p>
+                <p class="english-name">Internal Snap Ring Pliers (Straight)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/laaserings_indvendig_vinklet.jpg" alt="Låseringstang Indvendig Vinklet" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Låseringstang (Indv., Vinklet 90°)</h3>
                 <p class="text-sm text-gray-600">Formål: Til ringe i huller, der sidder dybt eller bag en kant. Vinklen giver adgang.</p>
+                <p class="english-name">Internal Snap Ring Pliers (Angled)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/laaserings_udvendig_lige.jpg" alt="Låseringstang Udvendig Lige" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Låseringstang (Udvendig, Lige)</h3>
                 <p class="text-sm text-gray-600">Formål: Til ringe på aksler (f.eks. variator). Spidserne lukker ved tryk. Kræver direkte adgang.</p>
+                <p class="english-name">External Snap Ring Pliers (Straight)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/laaserings_udvendig_vinklet.jpg" alt="Låseringstang Udvendig Vinklet" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Låseringstang (Udvendig, Vinklet 90°)</h3>
                 <p class="text-sm text-gray-600">Formål: Til ringe på aksler, der sidder tæt på et hus eller i en vinkel.</p>
+                <p class="english-name">External Snap Ring Pliers (Angled)</p>
             </div>
             <!-- OPDELEDE HAMMERE OG DORNE -->
             <div class="tool-card">
                 <img src="billeder/gummihammer.jpg" alt="Gummihammer" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Gummihammer</h3>
                 <p class="text-sm text-gray-600">Formål: Skånsom montering af dele, der kræver fleksibilitet i slaget (f.eks. dæk eller kåber).</p>
+                <p class="english-name">Rubber Mallet</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/plastikhammer.jpg" alt="Plastikhammer/Død-vægt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Plastikhammer (Død-vægt)</h3>
                 <p class="text-sm text-gray-600">Formål: Slagværktøj med lav rekyl til præcis montering af lejer uden skader.</p>
+                <p class="english-name">Dead Blow Hammer</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/maskinhammer.jpg" alt="Maskinhammer" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Maskinhammer (Stål)</h3>
                 <p class="text-sm text-gray-600">Formål: Overfører kraft, primært til at slå på dorne. Må aldrig ramme direkte på scooterdele.</p>
+                <p class="english-name">Ball-Peen Hammer</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/slagdorn.jpg" alt="Slagdorn" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Slagdorn</h3>
                 <p class="text-sm text-gray-600">Formål: Bruges til at flytte eller forme metal, f.eks. til at udvide eller trække aksler.</p>
+                <p class="english-name">Drift Punch</p>
             </div>
              <div class="tool-card">
                 <img src="billeder/udpunsningsdorn.jpg" alt="Udpunsningsdorn" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Udpunsningsdorn</h3>
                 <p class="text-sm text-gray-600">Formål: Bruges som præcist mellemled til at fjerne stifter, splittere eller lejer fra huller.</p>
+                <p class="english-name">Pin Punch</p>
             </div>
         </div>
     </div>
@@ -208,51 +254,59 @@
     <!-- Kategori: II. Specialværktøj til Motor og Drivlinje -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">II. Specialværktøj til Motor og Drivlinje</h2>
+            <h2 class="text-2xl font-bold">Specialværktøj til Motor og Drivlinje (Engine & Drivetrain)</h2>
         </div>
         <div class="tool-grid">
-            <!-- NYE OPDELEDE VARIATORLÅSE -->
+            <!-- OPDELEDE VARIATORLÅSE -->
             <div class="tool-card">
                 <img src="billeder/variatorlaasevaerktoej_minarelli.jpg" alt="Variatorlåseværktøj Minarelli" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Variatorlåseværktøj (Minarelli / Kina 2T)</h3>
                 <p class="text-sm text-gray-600">Formål: Formstøbt modhold specielt til Minarelli og de fleste kinesiske 2-takts motorer.</p>
+                <p class="english-name">Minarelli Variator Tool</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/variatorlaasevaerktoej_piaggio.jpg" alt="Variatorlåseværktøj Piaggio" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Variatorlåseværktøj (Piaggio / Vespa)</h3>
                 <p class="text-sm text-gray-600">Formål: Formstøbt modhold specielt til Piaggio, Gilera og Vespa motorer (kræver unik lås).</p>
+                <p class="english-name">Piaggio Variator Tool</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/variatorlaasevaerktoej_honda.jpg" alt="Variatorlåseværktøj Honda 4T" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Variatorlåseværktøj (Honda / Kina 4T)</h3>
                 <p class="text-sm text-gray-600">Formål: Formstøbt modhold til Honda og de fleste kinesiske 4-takts motorer (f.eks. GY6).</p>
+                <p class="english-name">GY6 Variator Tool</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/koblingslaasevaerktoej.jpg" alt="Koblingslåseværktøj" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Koblingslåseværktøj (Universal)</h3>
                 <p class="text-sm text-gray-600">Formål: Kritisk modhold (ofte universal tappe-type) for at løsne/spænde møtrikken til koblingsklokken.</p>
+                <p class="english-name">Clutch Holding Tool</p>
             </div>
             <!-- NYE OPDELEDE SVINGHJULSAFTRÆKKERE -->
             <div class="tool-card">
                 <img src="billeder/svinghjulsaftraekker_minarelli.jpg" alt="Svinghjulsaftrækker Minarelli" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Svinghjulsaftrækker (Minarelli/Yamaha)</h3>
                 <p class="text-sm text-gray-600">Formål: Aftrækker med specifikt gevind til afmontering af svinghjul på Minarelli-baserede motorer.</p>
+                <p class="english-name">Minarelli Flywheel Puller</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/svinghjulsaftraekker_piaggio.jpg" alt="Svinghjulsaftrækker Piaggio" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Svinghjulsaftrækker (Piaggio/Vespa)</h3>
                 <p class="text-sm text-gray-600">Formål: Aftrækker med specifikt gevind og form, nødvendig til de fleste Piaggio-motorer.</p>
+                <p class="english-name">Piaggio Flywheel Puller</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/svinghjulsaftraekker_universal.jpg" alt="Svinghjulsaftrækker Universal" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Svinghjulsaftrækker (Honda/Universal)</h3>
                 <p class="text-sm text-gray-600">Formål: Flere gevindstørrelser til ældre Honda og forskellige Kina-mærker.</p>
+                <p class="english-name">Universal Flywheel Puller</p>
             </div>
             
             <div class="tool-card">
                 <img src="billeder/krumtap_montagevaerktoej.jpg" alt="Krumtap-montageværktøj" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Krumtap-montageværktøj</h3>
                 <p class="text-sm text-gray-600">Formål: Til skånsomt at trække krumtappen ind i motorblokken. Slag er forbudt.</p>
+                <p class="english-name">Crankshaft Installation Tool</p>
             </div>
             
             <!-- OPDELEDE LEJEAFTREKKERE -->
@@ -260,22 +314,26 @@
                 <img src="billeder/lejeaftraekkersaet_indvendig.jpg" alt="Indvendig Lejeaftrækkersæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Lejeaftrækkersæt (Indvendig/Blind)</h3>
                 <p class="text-sm text-gray-600">Formål: Essentiel. Til at trække lejer ud af lukkede huse eller blindhuller (f.eks. motorblok).</p>
+                <p class="english-name">Internal Bearing Puller</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/lejeaftraekkersaet_udvendig.jpg" alt="Udvendig Lejeaftrækkersæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Lejeaftrækkersæt (Udvendig/Klo)</h3>
                 <p class="text-sm text-gray-600">Formål: Til at trække lejer, tandhjul eller remskiver af en aksel, hvor der er plads til klogreb.</p>
+                <p class="english-name">External Bearing Puller</p>
             </div>
 
             <div class="tool-card">
                 <img src="billeder/cylinderhoner.jpg" alt="Cylinderhoner" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Cylinderhoner</h3>
                 <p class="text-sm text-gray-600">Formål: Til at genoprette et korrekt krydsslibningsmønster i cylindervæggen ved skift af stempelringe.</p>
+                <p class="english-name">Cylinder Hone</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/ventilfjederkompressor.jpg" alt="Ventilfjederkompressor" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Ventilfjederkompressor</h3>
                 <p class="text-sm text-gray-600">Formål: Til at komprimere ventilfjedre for at fjerne/montere ventilsikringer (kun 4-takter).</p>
+                <p class="english-name">Valve Spring Compressor</p>
             </div>
         </div>
     </div>
@@ -283,43 +341,50 @@
     <!-- Kategori: III. Diagnose og Elektrisk Specialudstyr -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">III. Diagnose og Elektrisk Specialudstyr</h2>
+            <h2 class="text-2xl font-bold">Diagnose og Elektrisk Specialudstyr (Diagnostics & Electrical)</h2>
         </div>
         <div class="tool-grid">
             <div class="tool-card">
                 <img src="billeder/digitalt_multimeter.jpg" alt="Digitalt Multimeter" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Digitalt Multimeter (DMM)</h3>
                 <p class="text-sm text-gray-600">Formål: Måling af V (spænding), A (strøm) og Ω (modstand) for at diagnosticere elektriske fejl.</p>
+                <p class="english-name">Digital Multimeter</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/obd_scanner.jpg" alt="OBD-II/Diagnose-scanner" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">OBD-II/Diagnose-scanner</h3>
                 <p class="text-sm text-gray-600">Formål: Kommunikation med ECU (motorstyring) for at læse fejlkoder og nulstille serviceintervaller.</p>
+                <p class="english-name">OBD-II Scanner</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/stroemtang.jpg" alt="Strømtang" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Strømtang (DC Clamp Meter)</h3>
                 <p class="text-sm text-gray-600">Formål: Måling af strømforbrug (Ampere) i DC-kredsløb uden at afbryde ledningen.</p>
+                <p class="english-name">DC Clamp Meter</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/taendingsmicrometer.jpg" alt="Tændingsmicrometer" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Tændingsmicrometer</h3>
                 <p class="text-sm text-gray-600">Formål: Ekstremt præcis indstilling af tændingstidspunktet i forhold til top dead center (TDC).</p>
+                <p class="english-name">Timing Micrometer</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/crimptang.jpg" alt="Crimptang" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Crimptang (Professionel)</h3>
                 <p class="text-sm text-gray-600">Formål: Til at montere elektriske stik og terminaler professionelt og sikre en lav modstand.</p>
+                <p class="english-name">Crimping Pliers</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/terminalsaet.jpg" alt="Terminal Sæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Terminal- og Ledningssæt</h3>
                 <p class="text-sm text-gray-600">Formål: Forbrugsvarer: Sortiment af stik, kabelsko og krympeflex til ledningsreparation.</p>
+                <p class="english-name">Terminal & Wiring Kit</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/batteritester.jpg" alt="Batteritester" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Batteritester</h3>
                 <p class="text-sm text-gray-600">Formål: Til at diagnosticere batteriets faktiske helbredstilstand (CCA) og levetid.</p>
+                <p class="english-name">Battery Tester</p>
             </div>
         </div>
     </div>
@@ -327,28 +392,39 @@
     <!-- Kategori: IV. Dæk og Hjul -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">IV. Dæk og Hjul</h2>
+            <h2 class="text-2xl font-bold">Dæk og Hjul (Tires and Wheels)</h2>
         </div>
         <div class="tool-grid">
             <div class="tool-card">
                 <img src="billeder/daekapparat.jpg" alt="Dækapparat" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Dækapparat (Maskine)</h3>
                 <p class="text-sm text-gray-600">Formål: Til hurtig, sikker og skånsom afmontering og montering af scooter- og motorcykeldæk.</p>
+                <p class="english-name">Tire Changer</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/afbalanceringsapparat.jpg" alt="Afbalanceringsapparat" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Afbalanceringsapparat</h3>
                 <p class="text-sm text-gray-600">Formål: Sikrer præcis afbalancering af hjul efter dækskift for at undgå vibrationer ved høj hastighed.</p>
+                <p class="english-name">Wheel Balancer</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/daekjern_saet.jpg" alt="Dækjern Sæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Dækjern (Sæt)</h3>
                 <p class="text-sm text-gray-600">Formål: Manuelt hjælpemiddel til at løsne de sidste sektioner af dækket fra fælgen.</p>
+                <p class="english-name">Tire Iron Set</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/ventilnaalvaerktoej.jpg" alt="Ventilnålværktøj" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Ventilnålværktøj</h3>
                 <p class="text-sm text-gray-600">Formål: Til at fjerne og montere ventilnålen i dækkets ventil hurtigt og sikkert.</p>
+                <p class="english-name">Valve Core Tool</p>
+            </div>
+            <!-- NYT KORT: DÆKTRYKSMÅLER -->
+            <div class="tool-card">
+                <img src="billeder/daektryksmaaler.jpg" alt="Dæktryksmåler" class="tool-image mb-4">
+                <h3 class="font-bold text-gray-800">Dæktryksmåler (Digital)</h3>
+                <p class="text-sm text-gray-600">Formål: Præcisionsværktøj til at måle og bekræfte dæktrykket. Essentiel for sikkerhed og køreøkonomi.</p>
+                <p class="english-name">Digital Tire Gauge</p>
             </div>
         </div>
     </div>
@@ -356,18 +432,20 @@
     <!-- Kategori: V. Bremse Service -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">V. Bremse Service</h2>
+            <h2 class="text-2xl font-bold">Bremse Service (Brake Service)</h2>
         </div>
         <div class="tool-grid">
             <div class="tool-card">
                 <img src="billeder/bremseudlufter.jpg" alt="Bremseudlufter" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Bremseudlufter (Vakuum)</h3>
                 <p class="text-sm text-gray-600">Formål: Kritisk for sikkerhed. Til at trække bremsevæsken igennem og sikre, at der ingen luftbobler er.</p>
+                <p class="english-name">Brake Bleeder (Vacuum)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/bremsekaliber_kompressor.jpg" alt="Bremsekaliber kompressor" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Bremsekaliber-kompressor/spreder</h3>
                 <p class="text-sm text-gray-600">Formål: Til at presse bremsekaliberens stempler sikkert og jævnt tilbage ved skift af klodser.</p>
+                <p class="english-name">Caliper Piston Spreader</p>
             </div>
         </div>
     </div>
@@ -375,28 +453,32 @@
     <!-- Kategori: VI. Karrosseri & Lakering -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">VI. Karrosseri & Lakering</h2>
+            <h2 class="text-2xl font-bold">Karrosseri & Lakering (Bodywork & Paint)</h2>
         </div>
         <div class="tool-grid">
             <div class="tool-card">
                 <img src="billeder/slibemaskine_lak.jpg" alt="Slibemaskine til lak" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Slibemaskine (Lak)</h3>
                 <p class="text-sm text-gray-600">Formål: Eksentersliber til at forberede plastkåber til lakering og fjerne ridser.</p>
+                <p class="english-name">Sander (Orbital)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/polermaskine.jpg" alt="Polermaskine" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Polermaskine</h3>
                 <p class="text-sm text-gray-600">Formål: Roterende/Dual-action maskine til at genoprette lakkens glans og fjerne defekter.</p>
+                <p class="english-name">Polisher</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/lakeringspistol.jpg" alt="Lakeringspistol" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Lakeringspistol</h3>
                 <p class="text-sm text-gray-600">Formål: HVLP (High Volume Low Pressure) pistol til præcis påføring af basis- og klarlak.</p>
+                <p class="english-name">Paint Spray Gun (HVLP)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/plastiksvejser.jpg" alt="Plastiksvejser" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Plastiksvejser</h3>
                 <p class="text-sm text-gray-600">Formål: Til at smelte og svejse revner i plastkåber (f.eks. ABS eller PP) for at sikre strukturel holdbarhed.</p>
+                <p class="english-name">Plastic Welder</p>
             </div>
         </div>
     </div>
@@ -404,88 +486,103 @@
     <!-- Kategori: VII. Værkstedsudstyr & Infrastruktur -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">VII. Værkstedsudstyr & Infrastruktur</h2>
+            <h2 class="text-2xl font-bold">Værkstedsudstyr & Infrastruktur (Workshop Equipment)</h2>
         </div>
         <div class="tool-grid">
             <div class="tool-card">
                 <img src="billeder/hydraulisk_loeftabord.jpg" alt="Løftebord" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Hydraulisk Løftebord</h3>
                 <p class="text-sm text-gray-600">Formål: Hæver scooteren til en ergonomisk arbejdshøjde. Skal have sikkerhedslås og min. 400 kg kapacitet.</p>
+                <p class="english-name">Hydraulic Lift Table</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/kompressor.jpg" alt="Kompressor" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Kompressor</h3>
                 <p class="text-sm text-gray-600">Formål: Leverer konstant trykluft til dækapparat, luftværktøj og lakeringspistol.</p>
+                <p class="english-name">Air Compressor</p>
             </div>
             <!-- OPDELEDE LØFTERE -->
             <div class="tool-card">
                 <img src="billeder/motorlift_hydraulisk.jpg" alt="Hydraulisk Motorlift" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Motorlift (Hydraulisk)</h3>
                 <p class="text-sm text-gray-600">Formål: Understøtter og manøvrerer motoren præcist under montering og afmontering.</p>
+                <p class="english-name">Hydraulic Engine Jack</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/motorhejs_kran.jpg" alt="Motorhejs Kran" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Motorhejs/Kran</h3>
                 <p class="text-sm text-gray-600">Formål: Til sikkert at løfte meget tunge motorer/transmissioner helt ud af rammen.</p>
+                <p class="english-name">Engine Hoist / Crane</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/ultralydsrenser.jpg" alt="Ultralydsrenser" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Ultralydsrenser</h3>
                 <p class="text-sm text-gray-600">Formål: Grundig og skånsom rengøring af karburatorer og små præcisionsdele (med varme).</p>
+                <p class="english-name">Ultrasonic Cleaner</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/delvasker.jpg" alt="Delvasker" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Delvasker</h3>
                 <p class="text-sm text-gray-600">Formål: Stort kar til rengøring af store, olieforurenede motordele (f.eks. motorblokke).</p>
+                <p class="english-name">Parts Washer</p>
             </div>
             <!-- OPDELEDE BOREMASKINER -->
             <div class="tool-card">
                 <img src="billeder/haandholdt_boremaskine.jpg" alt="Håndholdt Boremaskine" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Håndholdt Boremaskine</h3>
                 <p class="text-sm text-gray-600">Formål: Til almindelig montering, vedligeholdelse og boring i værkstedet.</p>
+                <p class="english-name">Handheld Drill</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/soejleboremaskine.jpg" alt="Søjleboremaskine" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Søjleboremaskine</h3>
                 <p class="text-sm text-gray-600">Formål: Til at bore præcise, vinkelrette huller i metaldele, kritisk ved gevindreparation.</p>
+                <p class="english-name">Drill Press</p>
             </div>
             <!-- OPDELEDE SVEJSEVÆRKER -->
             <div class="tool-card">
                 <img src="billeder/mig_svejser.jpg" alt="MIG Svejser" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Svejseværk (MIG/MAG)</h3>
                 <p class="text-sm text-gray-600">Formål: Hurtig svejsning af stål (rammer, udstødning). God til tykkere materialer.</p>
+                <p class="english-name">MIG Welder</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/tig_svejser.jpg" alt="TIG Svejser" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Svejseværk (TIG)</h3>
                 <p class="text-sm text-gray-600">Formål: Præcisionssvejsning af aluminium og rustfrit stål. Kræver høj renhed.</p>
+                <p class="english-name">TIG Welder</p>
             </div>
             <!-- OPDELEDE VVS -->
             <div class="tool-card">
                 <img src="billeder/roertang.jpg" alt="Rørtang" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Rørtang</h3>
                 <p class="text-sm text-gray-600">Formål: Til at gribe og dreje rør og fittings ved vedligeholdelse af værkstedets VVS-installationer.</p>
+                <p class="english-name">Pipe Wrench</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/roerskaerer.jpg" alt="Rørskærer" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Rørskærer</h3>
                 <p class="text-sm text-gray-600">Formål: Giver rene, lige snit i kobber-, aluminiums- eller plastrør, f.eks. til bremseledninger eller luftrør.</p>
+                <p class="english-name">Pipe Cutter</p>
             </div>
             <!-- OPDELEDE SIKKERHEDSUDSTYR -->
             <div class="tool-card">
                 <img src="billeder/foerstehjaelpskit.jpg" alt="Førstehjælpskit" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Førstehjælpskit</h3>
                 <p class="text-sm text-gray-600">Formål: Opfylder lovkrav. Til hurtig behandling af mindre skader og ulykker i værkstedet.</p>
+                <p class="english-name">First Aid Kit</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/oejenskyl.jpg" alt="Øjenskyl" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Øjenskyl</h3>
                 <p class="text-sm text-gray-600">Formål: Essentiel. Øjeblikkelig skylning ved kontakt med olie, syre, kemikalier eller snavs.</p>
+                <p class="english-name">Eye Wash Station</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/brandslukker.jpg" alt="Brandslukker" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Brandslukker (Klasse B/C)</h3>
                 <p class="text-sm text-gray-600">Formål: Til slukning af brande i væsker (olie, benzin) og elektrisk udstyr (klasse B/C).</p>
+                <p class="english-name">Fire Extinguisher (B/C)</p>
             </div>
         </div>
     </div>
@@ -493,43 +590,45 @@
     <!-- Kategori: VIII. Præcisionsmåling & Kemikalier -->
     <div class="category-card mb-8">
         <div class="bg-blue-600 text-white p-4 rounded-t-lg">
-            <h2 class="text-2xl font-bold">VIII. Præcisionsmåling & Kemikalier</h2>
+            <h2 class="text-2xl font-bold">Præcisionsmåling & Kemikalier (Precision & Chemicals)</h2>
         </div>
         <div class="tool-grid">
             <div class="tool-card">
                 <img src="billeder/digital_skydelaere.jpg" alt="Digital Skydelære" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Digital Skydelære</h3>
                 <p class="text-sm text-gray-600">Formål: Måler slidgrænser på remme, bremseklodser og aksler. Præcision typisk 0,01 mm.</p>
+                <p class="english-name">Digital Caliper</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/mikrometer.jpg" alt="Mikrometer" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Mikrometer</h3>
                 <p class="text-sm text-gray-600">Formål: Ekstremt præcis måling (i tusindedele af mm) af f.eks. krumtapstappe. Skal kalibreres jævnligt.</p>
+                <p class="english-name">Micrometer</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/soegerblads_saet.jpg" alt="Søgerbladsæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Søgerblad (Feeler Gauges)</h3>
                 <p class="text-sm text-gray-600">Formål: Måling af meget små spillerum, især ventilspillerum på 4-takts motorer.</p>
+                <p class="english-name">Feeler Gauge Set</p>
             </div>
-            <div class="tool-card">
-                <img src="billeder/traads_soegerblad.jpg" alt="Trådsøgerblad" class="tool-image mb-4">
-                <h3 class="font-bold text-gray-800">Trådsøgerblad (Tændrør)</h3>
-                <p class="text-sm text-gray-600">Formål: Bruges specifikt til at måle afstanden mellem elektroderne på tændrør.</p>
-            </div>
+            
             <div class="tool-card">
                 <img src="billeder/dysemaaler.jpg" alt="Dysemåler" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Dysemåler</h3>
                 <p class="text-sm text-gray-600">Formål: Nålesæt til præcis verifikation af karburatordysers diameter ved tuning eller fejlfinding.</p>
+                <p class="english-name">Jet Gauge</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/gevindreparationssaet.jpg" alt="Gevindreparationssæt" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Gevindreparationssæt (Helicoil)</h3>
                 <p class="text-sm text-gray-600">Formål: Reparation af ødelagte gevind i aluminiumsblokke/huse ved at indsætte en ny stålspiral.</p>
+                <p class="english-name">Thread Repair Kit (Helicoil)</p>
             </div>
             <div class="tool-card">
                 <img src="billeder/sikring_kemikalier.jpg" alt="Kemikalier" class="tool-image mb-4">
                 <h3 class="font-bold text-gray-800">Sikring og Kemikalier (Loctite)</h3>
                 <p class="text-sm text-gray-600">Formål: Sikring af bolte (f.eks. Loctite 243) mod vibrationer og fastlåsning af lejer (Loctite 648).</p>
+                <p class="english-name">Threadlockers & Retaining Compounds</p>
             </div>
         </div>
     </div>
